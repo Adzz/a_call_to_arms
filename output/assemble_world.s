@@ -1,6 +1,6 @@
 .data
   hello:
-    .string "World, ASSSEEEEMMBBBLLLLEEEE!"
+    .string "\n\n World, ASSSEEEEMMBBBLLLLEEEE!\n\n"
 
 .text
   .global main

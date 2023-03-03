@@ -1,5 +1,4 @@
 #! /bin/bash
 
-docker build -t assembly . &&
-docker run -t -d --name assemble assembly &&
-docker exec -it assemble bash
+docker-compose up -d --build &&
+docker exec -it 32_bit_arm bash

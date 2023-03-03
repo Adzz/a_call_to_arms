@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  assemble:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: 32_bit_arm
+    volumes:
+      - ./output:/compiled_ass/output
+    command: bash
+    stdin_open: true
+    tty: true
